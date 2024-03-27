@@ -51,8 +51,6 @@ template{display:none}[hidden]{display:none}
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
-  
-    /** SECTION **/
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-header-align: center;
@@ -69,14 +67,11 @@ template{display:none}[hidden]{display:none}
     --section-body-padding: 2rem 0 4rem;
     --section-footer-padding: 3rem 0 0;
     --section-footer-align: center;
-  
-    /** HEADER **/
+
     --header-padding: 4rem 0 0;
-  
-    /** FOOTER **/
+ 
     --footer-padding: 5rem 0 1rem;
-  
-    /** NAVBAR **/
+
     --nav-item-font-family: var(--font-family-headings);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
@@ -84,8 +79,6 @@ template{display:none}[hidden]{display:none}
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 0 2rem;
     --nav-item-link-hover: var(--color-white);
-  
-    /** BUTTON **/
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
     --button-border: var(--color-primary) solid 0.2rem;
@@ -95,15 +88,11 @@ template{display:none}[hidden]{display:none}
     --button-hover-color: var(--color-white);
     --button-hover-text-decoration: none;
     --button-hover-background: var(--color-primary);
-  
-    /** MOTION **/
+
     --transition-duration: .3s;
     --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
   }
-  
-  /* Base
-      ============================= */
-  
+
   *, *:before, *:after {
     box-sizing: border-box;
   }
@@ -170,10 +159,7 @@ template{display:none}[hidden]{display:none}
     color: var(--color-primary);
     background: var(--color-white);
   }
-  
-  /* Helpers
-      ============================= */
-  
+
   .visually-hidden:not(:focus):not(:active) {
     position: absolute !important;
     height: 1px;
@@ -187,21 +173,13 @@ template{display:none}[hidden]{display:none}
     width: 100%;
     height: auto;
   }
-  
-  /*** 2. LAYOUT ***/
-  
-  /* Layout
-      ============================= */
-  
+
   .container {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
   }
-  
-  /* Grid
-      ============================= */
-  
+
   ul.row {
     margin: -1rem;
     padding: 0;
@@ -243,10 +221,7 @@ template{display:none}[hidden]{display:none}
       width: 100%;
     }
   }
-  
-  /* Navbar
-      ============================= */
-  
+
   .nav {
     margin: 0;
     padding: 0;
@@ -326,10 +301,7 @@ template{display:none}[hidden]{display:none}
     justify-content: space-between;
     align-items: center;
   }
-  
-  /* Footer
-      ============================= */
-  
+ 
   .footer {
     --nav-item-font-weight: normal;
     --nav-item-font-size: var(--font-size-small);
@@ -357,12 +329,7 @@ template{display:none}[hidden]{display:none}
   .social-link > svg {
     fill: var(--text-color);
   }
-  
-  /*** 3. SECTION ***/
-  
-  /* Section (all styles)
-      ============================= */
-  
+ 
   .section {
     padding: var(--section-padding);
   }
@@ -396,9 +363,7 @@ template{display:none}[hidden]{display:none}
     padding: var(--section-footer-padding);
     text-align: var(--section-footer-align);
   }
-  
-  /* Section theming
-      ============================= */
+
   
   [data-section-theme="dark"] {
     --button-color: var(--color-white);
@@ -407,9 +372,7 @@ template{display:none}[hidden]{display:none}
     background: var(--color-black);
   }
   
-  /* Section HERO
-      ============================= */
-  
+
   .section-hero {
     position: relative;
     margin-top: -8.5rem;
@@ -442,9 +405,7 @@ template{display:none}[hidden]{display:none}
     justify-content: center;
     min-height: 35vh;
   }
-  /* Section Latest news
-      ============================= */
-  
+
   .section-latest-news .row {
     flex-direction: row-reverse;
   }
@@ -454,32 +415,19 @@ template{display:none}[hidden]{display:none}
       flex-direction: column;
     }
   }
-  
-  /* Section SERVICES
-      ============================= */
-  
+
   .section-services .row {
     flex-wrap: wrap;
   }
-  
-  /* Section ABOUT US
-      ============================= */
+
   
   .section-about-us [class*='col-'] {
     align-self: center;
   }
-  
-  /*** 4. CARD ***/
-  
-  /* Card (all styles)
-      ============================= */
-  
+ 
   .card-category {
     color: var(--color-primary);
   }
-  
-  /* Card WORK
-      ============================= */
   
   .card-work .card-outer {
     position: relative;
@@ -542,10 +490,7 @@ template{display:none}[hidden]{display:none}
   .card-work:hover .card-title {
     opacity: 1;
   }
-  
-  /* Card SERVICES
-      ============================= */
-  
+
   .card-services .card-title {
     margin: 0;
   }
@@ -563,10 +508,7 @@ template{display:none}[hidden]{display:none}
     transition-duration: 0.3s;
     transition-property: color, background-color;
   }
-  
-  /* Card TESTIMONIAL
-      ============================= */
-  
+
   .card-testimonial {
     text-align: center;
   }
@@ -596,12 +538,7 @@ template{display:none}[hidden]{display:none}
     font-size: 10rem;
     z-index: -1;
   }
-  
-  /*** ARTICLE PAGE ***/
-  
-  /* Section HERO (article)
-      ============================= */
-  
+
   .hero-article {
     background-size: 150rem 100rem;
     background-position: 50% 0;
@@ -633,10 +570,7 @@ template{display:none}[hidden]{display:none}
   .main-article {
     padding: 5rem 0;
   }
-  
-  /* Post
-      ============================= */
-  
+
   .post {
     display: flex;
     align-items: baseline;
@@ -668,10 +602,7 @@ template{display:none}[hidden]{display:none}
     color: var(--color-grey);
     text-align: center;
   }
-  
-  /* Post Meta
-      ============================= */
-  
+
   .post-meta-list {
     flex-direction: column;
   }
@@ -695,10 +626,7 @@ template{display:none}[hidden]{display:none}
     border: none;
     margin-bottom: 3rem;
   }
-  
-  /* Tag list
-      ============================= */
-  
+
   .tag-list {
     padding: 0;
     list-style: none;
@@ -716,11 +644,6 @@ template{display:none}[hidden]{display:none}
     content: "";
   }
   
-  /*** FORM ***/
-  
-  /* Comment section
-      ============================= */
-  
   .post-comments {
     width: 80%;
     margin: 10rem 0 0 auto;
@@ -730,10 +653,7 @@ template{display:none}[hidden]{display:none}
   .post-comments .section-title {
     font-variant: small-caps;
   }
-  
-  /* Basic form
-      ============================= */
-  
+
   form {
     display: flex;
     flex-direction: column;
@@ -785,10 +705,7 @@ template{display:none}[hidden]{display:none}
     font-style: italic;
     font-size: var(--font-size-small);
   }
-  
-  /* Form group
-      ============================= */
-  
+
   .form-group {
     padding: 1rem;
     margin: 0;
@@ -799,10 +716,7 @@ template{display:none}[hidden]{display:none}
     background-color: var(--color-light-grey);
     transition: .3s;
   }
-  
-  /* Form field
-      ============================= */
-  
+
   .form-field-container {
     position: relative;
   }
@@ -810,9 +724,6 @@ template{display:none}[hidden]{display:none}
   .form-field-icon {
     font-style: normal;
   }
-  
-  /* Form help
-      ============================= */
   
   .form-group .form-help {
     margin: 0;
@@ -829,9 +740,7 @@ template{display:none}[hidden]{display:none}
     max-height: 20rem;
     margin: .4rem 0 0;
   }
-  
-  /* Form error handling
-      ============================= */
+
   
   input:not(:placeholder-shown) ~ .form-field-icon::after {
     height: 100%;
@@ -866,7 +775,6 @@ template{display:none}[hidden]{display:none}
     border: 0.1rem solid var(--valid-color);
   }
   
-  /*** SEARCH FORM ***/
   
   .form-search {
     display: block;
